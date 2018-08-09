@@ -46,6 +46,8 @@ public class CreateJobCardActivity extends AppCompatActivity {
         setUserData();
     }
 
+    
+
     public void setUserData(){
 
         userName.setText(userDetailModel.getUserName());
