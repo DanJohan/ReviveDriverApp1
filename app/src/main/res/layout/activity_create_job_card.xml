@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.car.revivedriverapp.CreateJobCardActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.car.revivedriverapp.CreateJobCardActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Vehicle Walkaround Worksheet"
+        android:textSize="50sp"
+        android:id="@+id/title"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="Owner Name:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/title"
+        android:textStyle="bold"
+        android:id="@+id/owner_name"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="Rinki Sharma"
+        android:layout_toRightOf="@+id/owner_name"
+        android:layout_below="@+id/title"
+        android:id="@+id/name"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textFontWeight="2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="Registration No.:"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/title"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/name"
+        android:id="@+id/registration"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="ABC43435"
+        android:layout_toRightOf="@+id/registration"
+        android:layout_below="@+id/title"
+        android:id="@+id/number"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="Address: "
+        android:textStyle="bold"
+        android:layout_below="@+id/owner_name"
+        android:id="@+id/adda"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="180dp"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="ABC43435"
+        android:layout_toRightOf="@+id/adda"
+        android:layout_below="@+id/owner_name"
+        android:id="@+id/address"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="Mobile:"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/owner_name"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/address"
+        android:id="@+id/mobile"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="+9113454564"
+        android:layout_toRightOf="@+id/mobile"
+        android:layout_below="@+id/owner_name"
+        android:id="@+id/m_number"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="Brand Name:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/adda"
+        android:textStyle="bold"
+        android:id="@+id/brand"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="150dp"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="Maruti"
+        android:layout_toRightOf="@+id/brand"
+        android:layout_below="@+id/adda"
+        android:id="@+id/brand_name"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:text="Model Detail:"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adda"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/brand_name"
+        android:id="@+id/model"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:text="+9113454564"
+        android:layout_toRightOf="@+id/model"
+        android:layout_below="@+id/adda"
+        android:id="@+id/m_detail"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/brand"
+        android:layout_marginTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+</RelativeLayout>
+</ScrollView>
